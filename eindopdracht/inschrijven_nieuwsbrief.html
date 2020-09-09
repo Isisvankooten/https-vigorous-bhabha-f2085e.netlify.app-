@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet_e.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuwsbrief</title>
+</head>
+<body>   
+    <div class="parent">
+    <header>
+      <h1 class="header">Inschrijven nieuwsbrief</h1>
+    </header>
+  <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="de_eerste_weken.html">De eerste weken</a></li>
+                <li><a href="slaapschema.html">Slaapschema</a></li>
+                <li><a href="yindee.html">Yindee</a></li>
+                <li><a href="inschrijven_nieuwsbrief.html">Nieuwsbrief</a></li>
+              </ul>
+  </nav>
+  <main>
+    <h2>Wil je nog meer informatie ontvangen? </h2>
+        <p> Wil je leuke hersenspelletjes voor je hond ontvangen? 
+            En natuurlijk de leukste foto's delen, en krijgen, van puppies? We gaan je laten zien hoe je een nieuw trucje kan aanleren. Ook kijken we naar verschillende wandelgebieden en hondenscholen.
+            De nieuwsbrief wordt iedere twee weken verstuurd. Meld je aan door het invullen van dit formulier.
+        </p>  
+     <form class="form" name="contact" method="POST" data-netlify="true">
+   
+        <p>  <label class="label">Naam: <input type="text" name="name" /></label></p>   
+        <p>  <label class="label">Emailadres: <input type="email" name="email" /></label></p>
+        <p>  <label class="label">Tel: <input type="number" name="tel"/></label></p>
+        <p>  <label class="label">Leeftijd: <input type="age" name="age"/></label></p>     
+        <p>  <label class="label">Geslacht:<input type="radio" name="sex" value="neutral" />Neutraal</label>
+             <label class="label"><input type="radio" name="sex" value="vrouw" />Vrouw</label>
+             <label class="label"><input type="radio" name="sex" value="man" />Man</label>
+             <label class="label"><input type="radio" name="sex" value="geen keuze" />Zeg ik niet</label>
+        </p> 
+        <p> <label > Favoriete ras hond: <br> </label><input type="checkbox" id="ras1" name="ras1" value="Labradoodle">
+            <label  for="Labradoodle"> Labradoodle</label><br>
+            <input type="checkbox" id="ras2" name="ras2" value="Teckel">
+            <label  for="Teckel"> Teckel</label><br>
+            <input type="checkbox" id="ras3" name="ras3" value="Chihuahua">
+            <label for="Chihuahua"> Chihuahua</label><br>
+            <input type="checkbox" id="ras4" name="ras4" value="Herder">
+            <label for="Herder"> Herder</label><br>
+            <input type="checkbox" id="ras5" name="ras5" value="Goldenretriever">
+            <label for="Goldenretriever"> Goldenretriever</label><br>
+            <input type="checkbox" id="ras6" name="ras6" value="Anders namelijk:">
+            <label for="Anders namelijk:">Anders namelijk: <input type="name" name="name"/></label>
+        </p>
+        <p> 
+        <label class="label">Naam van je Pup: <input type="name" name="name"/></label>  
+        </p>
+        <p>
+            <label class="label"> Wat voor informatie zoek je? <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <label class="label" for="myfile">Upload jouw puppy foto's voor in de nieuwsbrief:</label>
+            <input type="file" id="myfile" name="myfile">
+        </p>
+        <p>
+            <input type="reset">  
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </main>
+    <footer>
+        Met liefde samengesteld door Isis en Yindee.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* grid ------------------------------------------------*/
+.parent 
+       {
+        display: grid;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+        height: 1000px;
+        grid-template-areas:
+               " header "
+               " nav "
+               " main "
+               " footer "    
+       } 
+header,
+nav,
+main,
+footer 
+        {       
+        background-color: black;
+        margin: 5px;
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        }
+header { 
+         grid-area: header;
+         background-image: url("hondenpootje_zwart_20x20.gif");
+         background-repeat: repeat-x repeat-y;
+       }
+nav    {  
+        grid-area: nav; 
+        position: sticky;
+       }
+ul     {
+        padding: 20px; 
+        background-color: black ;
+       }
+li     {
+        display: block;
+        float: left;
+        position: relative;
+        width: 20%;
+        color: lightpink;
+        background-color: black;
+        text-align: center;
+        padding: 3px 16px;
+        text-decoration: none;
+        border: 4px ridge pink;
+        border-radius: 25px;
+       }
+a      {
+        display: block;
+        color: lightpink;
+        padding: 8px 2px 8px 2px;
+        background-color: black;
+       }
+li :hover
+       {
+        background-color: rgb(121, 111, 117);
+       }
+main   {  
+        grid-area: main;
+        background-color: lightpink;
+        padding: 20px 10px 30px 10px;
+       }
+footer { 
+        grid-area: footer; 
+        background-color: rgb(70, 58, 70);
+        color: lightpink;
+        text-align: center;
+        font-size: large;
+       }
+body {
+        background-color: pink;
+      }
+
+h1     { 
+        text-transform: uppercase; /* alles met een hoofdletter */
+        font-size: 180%;
+        text-align: center;
+        text-shadow: -5px 0 black, 0 5px black,
+        2px 0 black, 0 -3px black;
+        color: lightpink;
+        font-weight: thick;
+        font-family: Arial, Helvetica, sans-serif;
+        border-width: medium;        
+       }
+h2	{ 
+        text-transform: capitalize;
+        text-align: left;
+        font-size: 150%;
+        font-weight: thick;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+         
+       }
+p	{ 
+        Line-height: 100%;
+        word-spacing: 0.5em;
+        text-align: left;
+        text-indent: 2em;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       @media only screen and (max-width: 320px) 
+       {
+         .header 
+         {
+           font-size: 24px;
+         }
+       }  
+.table           
+       {
+       font-family: arial, sans-serif;
+       border-collapse: collapse;
+       width: 100%;
+       }
+     
+       td, th {
+       border: 1px solid #dddddd;
+       text-align: left;
+       padding: 8px;
+       }
+     
+       tr:nth-child(even) {
+       background-color: #dddddd;
+       }   
+.flex-container
+       {
+       display: flex;
+       justify-content: space-around;
+       color: black;
+       align-items: flex-end;
+       margin: 3px;
+       }
+.form
+       {
+
+       }       
+
+.label
+       {
+     
+       display: inline-table;      
+       text-align: left;
+}
+       
+     
+
+       @media screen and (min-width: 600px) 
+       {
+         body 
+              {
+           color: #333333;
+           padding: 20px;
+           background-color: black;
+              }
+         header 
+              {
+              font-size: 35px;
+              font-optical-sizing: auto;
+              }
+            
+       }  
+
+
+        
